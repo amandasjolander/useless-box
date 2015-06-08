@@ -16,8 +16,6 @@
 
 <body class="clearfix">
 
-	<div class="test">
-	</div>
 
 	<div id="tridiv">
 	  <div class="scene" style="-webkit-transform:rotateX(-19deg) rotateY(63deg); -moz-transform:rotateX(-19deg) rotateY(63deg); -ms-transform:rotateX(-19deg) rotateY(63deg); transform:rotateX(-19deg) rotateY(63deg); ">
