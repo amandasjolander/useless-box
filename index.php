@@ -1,3 +1,9 @@
+<?php
+require_once('functions.php');
+
+$connection = connect_to_sql();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
