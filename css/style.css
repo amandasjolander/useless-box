@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box; }
+
 body {
   background-color: #fbfbf8; }
   body .count {
@@ -34,6 +37,9 @@ body {
   -ms-transform: rotateX(-18deg) rotateY(-39deg);
   transform: rotateX(-18deg) rotateY(-39deg); }
 
+.face {
+  border: 1px solid gray; }
+
 .shape {
   top: 50%;
   left: 50%;
@@ -41,8 +47,6 @@ body {
   height: 0;
   transform-origin: 50%; }
   .shape .face {
-    background-color: rgba(0, 0, 0, 0.05882);
-    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.4);
     background-size: 100% 100% !important;
     background-position: center;
     overflow: hidden;
@@ -321,7 +325,7 @@ body {
   .cyl-2 .s13, .switch .s13 {
     transform: rotateY(347.14286deg) translate3D(-50%, 0, 0.325em); }
   .cyl-2 .face, .cyl-2 .side, .switch .face, .switch .side {
-    background-color: #FFFFFF; }
+    background-color: #a5a5a5; }
 
 .switch.active {
   left: 574px;
@@ -329,11 +333,16 @@ body {
 
 /* .closer styles */
 .closer {
-  display: block; }
+  display: block;
+  box-shadow: none; }
+  .closer .face {
+    background-color: #904fa7; }
 
 .closer.active {
   top: 50%;
   left: 50%; }
+  .closer.active .face {
+    background-color: #904fa7; }
 
 /* .cyl-3 styles */
 .cyl-3 {
@@ -382,8 +391,6 @@ body {
     transform: rotateY(321.42857deg) translate3D(-50%, 0, 0.725em); }
   .cyl-3 .s13 {
     transform: rotateY(347.14286deg) translate3D(-50%, 0, 0.725em); }
-  .cyl-3 .face, .cyl-3 .side {
-    background-color: #FFFFFF; }
 
 /* .cyl-4 styles */
 .cyl-4 {
@@ -432,8 +439,6 @@ body {
     transform: rotateY(321.42857deg) translate3D(-50%, 0, 0.725em); }
   .cyl-4 .s13 {
     transform: rotateY(347.14286deg) translate3D(-50%, 0, 0.725em); }
-  .cyl-4 .face, .cyl-4 .side {
-    background-color: #FFFFFF; }
 
 /* .cyl-5 styles */
 .cyl-5 {
@@ -482,8 +487,6 @@ body {
     transform: rotateY(321.42857deg) translate3D(-50%, 0, 0.725em); }
   .cyl-5 .s13 {
     transform: rotateY(347.14286deg) translate3D(-50%, 0, 0.725em); }
-  .cyl-5 .face, .cyl-5 .side {
-    background-color: #FFFFFF; }
 
 /* .cyl-6 styles */
 .cyl-6 {
@@ -533,7 +536,5 @@ body {
     transform: rotateY(321.42857deg) translate3D(-50%, 0, 0.725em); }
   .cyl-6 .s13 {
     transform: rotateY(347.14286deg) translate3D(-50%, 0, 0.725em); }
-  .cyl-6 .face, .cyl-6 .side {
-    background-color: #FFFFFF; }
 
 /*# sourceMappingURL=style.css.map */
