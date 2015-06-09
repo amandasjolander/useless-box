@@ -1,3 +1,14 @@
+body .count {
+  box-sizing: border-box;
+  width: 200px;
+  float: right;
+  margin: 30px 40px 0 0; }
+  body .count .count-box {
+    width: 180px;
+    padding: 10px;
+    background-color: lightgray;
+    margin: 10px 0; }
+
 /* /!\ You need to add vendor prefixes in order to render the CSS properly (or simply use http://leaverou.github.io/prefixfree/) /!\ */
 #tridiv {
   perspective: 800px;
@@ -200,10 +211,10 @@
   width: 15em;
   height: 2em;
   margin: -1em 0 0 -7.5em;
-  -webkit-transition: all 0.3s ease-in-out 220ms;
-  -moz-transition: all 0.3s ease-in-out 220ms;
-  -o-transition: all 0.3s ease-in-out 220ms;
-  transition: all 0.3s ease-in-out 220ms; }
+  -webkit-transition: all 0.1s ease-in-out 220ms;
+  -moz-transition: all 0.1s ease-in-out 220ms;
+  -o-transition: all 0.1s ease-in-out 220ms;
+  transition: all 0.1s ease-in-out 220ms; }
 
 .cub-5.active {
   top: 46.9%;
@@ -321,10 +332,10 @@
   width: 0.7em;
   height: 4em;
   margin: -2em 0 0 -0.35em;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
 
 .switch.active {
   left: 574px;
@@ -395,10 +406,10 @@
   width: 1.5em;
   height: 5em;
   margin: -2.5em 0 0 -0.75em;
-  -webkit-transition: all 0.3s ease-in-out 200ms;
-  -moz-transition: all 0.3s ease-in-out 200ms;
-  -o-transition: all 0.3s ease-in-out 200ms;
-  transition: all 0.3s ease-in-out 200ms; }
+  -webkit-transition: all 0.1s ease-in-out 200ms;
+  -moz-transition: all 0.1s ease-in-out 200ms;
+  -o-transition: all 0.1s ease-in-out 200ms;
+  transition: all 0.1s ease-in-out 200ms; }
 
 .cyl-3.active {
   top: 50%;
@@ -466,10 +477,10 @@
   margin: -1em 0 0 -0.75em;
   top: 57.1%;
   left: 40.3%;
-  -webkit-transition: all 0.3s ease-in-out 200ms;
-  -moz-transition: all 0.3s ease-in-out 200ms;
-  -o-transition: all 0.3s ease-in-out 200ms;
-  transition: all 0.3s ease-in-out 200ms; }
+  -webkit-transition: all 0.1s ease-in-out 200ms;
+  -moz-transition: all 0.1s ease-in-out 200ms;
+  -o-transition: all 0.1s ease-in-out 200ms;
+  transition: all 0.1s ease-in-out 200ms; }
 
 .cyl-4.active {
   top: 50%;
@@ -537,10 +548,10 @@
   margin: -1em 0 0 -0.75em;
   top: 57%;
   left: 40.4%;
-  -webkit-transition: all 0.3s ease-in-out 200ms;
-  -moz-transition: all 0.3s ease-in-out 200ms;
-  -o-transition: all 0.3s ease-in-out 200ms;
-  transition: all 0.3s ease-in-out 200ms; }
+  -webkit-transition: all 0.1s ease-in-out 200ms;
+  -moz-transition: all 0.1s ease-in-out 200ms;
+  -o-transition: all 0.1s ease-in-out 200ms;
+  transition: all 0.1s ease-in-out 200ms; }
 
 .cyl-5.active {
   top: 50%;
@@ -609,10 +620,10 @@
   top: 57%;
   display: block;
   left: 485px;
-  -webkit-transition: all 0.3s ease-in-out 200ms;
-  -moz-transition: all 0.3s ease-in-out 200ms;
-  -o-transition: all 0.3s ease-in-out 200ms;
-  transition: all 0.3s ease-in-out 200ms; }
+  -webkit-transition: all 0.1s ease-in-out 200ms;
+  -moz-transition: all 0.1s ease-in-out 200ms;
+  -o-transition: all 0.1s ease-in-out 200ms;
+  transition: all 0.1s ease-in-out 200ms; }
 
 .cyl-6.active {
   transform: translate3D(0.58333em, -9.58333em, 2em) rotateX(0deg) rotateY(0deg) rotateZ(80deg);

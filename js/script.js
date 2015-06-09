@@ -15,13 +15,9 @@ $(window).load(function() {
       $(".cyl-6").removeClass("active");
       $(".switch").removeClass("active");
       $(".lid").removeClass("active");
-    });
-    
+    });   
   });
-
-
-
-  
+ 
 
 });
 
