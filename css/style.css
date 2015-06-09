@@ -113,12 +113,14 @@ body {
   height: 10em;
   margin: -5em 0 0 -15em; }
   .cub-1 .ft {
-    transform: translateZ(0.5em); }
+    transform: translateZ(0.5em);
+    border-right: none; }
   .cub-1 .bk {
     transform: translateZ(-0.5em) rotateY(180deg); }
   .cub-1 .rt, .cub-1 .lt {
     width: 1em;
-    height: 10em; }
+    height: 10em;
+    border-left: none; }
   .cub-1 .tp, .cub-1 .bm {
     width: 30em;
     height: 1em; }
@@ -138,7 +140,8 @@ body {
     transform: translateZ(-0.5em) rotateY(180deg); }
   .cub-2 .rt, .cub-2 .lt {
     width: 1em;
-    height: 10em; }
+    height: 10em;
+    border-right: none; }
   .cub-2 .tp, .cub-2 .bm {
     width: 30em;
     height: 1em; }
@@ -178,7 +181,9 @@ body {
     transform: translateZ(-6.5em) rotateY(180deg); }
   .cub-4 .rt, .cub-4 .lt {
     width: 13em;
-    height: 10em; }
+    height: 10em;
+    border-left: none;
+    border-right: none; }
   .cub-4 .tp, .cub-4 .bm {
     width: 1em;
     height: 13em; }
