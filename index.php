@@ -8,7 +8,7 @@ $connection = connect_to_sql();
 <html>
 <head>
 	<title>Useless box</title>
-	
+
 	<meta name="format-detection" content="telephone=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width">
@@ -43,7 +43,7 @@ $connection = connect_to_sql();
 	  <div class="scene">
 
 	  <!-- Cube 1 -->
-	    <div class="shape cuboid-1 cub-1">
+	    <div class="shape shadow cuboid-1 cub-1">
 	      <div class="face ft">
 	        <div class="photon-shader">
 	        </div>
@@ -71,7 +71,7 @@ $connection = connect_to_sql();
 	    </div>
 
 	    <!-- Cube 2 -->
-	    <div class="shape cuboid-2 cub-2">
+	    <div class="shape shadow cuboid-2 cub-2">
 	      <div class="face ft">
 	        <div class="photon-shader">
 	        </div>
@@ -99,7 +99,7 @@ $connection = connect_to_sql();
 	    </div>
 
 	    <!-- Cube 3 -->
-	    <div class="shape cuboid-3 cub-3">
+	    <div class="shape shadow cuboid-3 cub-3">
 	      <div class="face ft">
 	        <div class="photon-shader">
 	        </div>
@@ -127,7 +127,7 @@ $connection = connect_to_sql();
 	    </div>
 
 	    <!-- Cube 4 -->
-	    <div class="shape cuboid-4 cub-4">
+	    <div class="shape shadow cuboid-4 cub-4">
 	      <div class="face ft">
 	        <div class="photon-shader">
 	        </div>
@@ -155,7 +155,7 @@ $connection = connect_to_sql();
 	    </div>
 
 	    <!-- Lid, Cube 5 -->
-	    <div class="shape cuboid-5 cub-5 lid">
+	    <div class="shape shadow cuboid-5 cub-5 lid">
 	      <div class="face ft">
 	        <div class="photon-shader">
 	        </div>
@@ -183,7 +183,7 @@ $connection = connect_to_sql();
 	    </div>
 
 	    <!-- Lid 2,Cube 6 -->
-	    <div class="shape cuboid-6 cub-6">
+	    <div class="shape shadow cuboid-6 cub-6">
 	      <div class="face ft">
 	        <div class="photon-shader">
 	        </div>
@@ -211,7 +211,7 @@ $connection = connect_to_sql();
 	    </div>
 
 	    <!-- Cylinder 1 -->
-	    <div class="shape cylinder-1 cyl-1">
+	    <div class="shape shadow cylinder-1 cyl-1">
 	      <div class="face bm">
 	        <div class="photon-shader">
 	        </div>
@@ -279,7 +279,7 @@ $connection = connect_to_sql();
 	    </div>
 
 	    <!-- Switch, Cylinder 2 -->
-	    <div class="shape cylinder-2 cyl-2 switch">
+	    <div class="shape shadow cylinder-2 cyl-2 switch">
 	      <div class="face bm">
 	        <div class="photon-shader">
 	        </div>
