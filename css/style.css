@@ -1,6 +1,11 @@
 * {
   box-sizing: border-box; }
 
+#activeUsers, #clickCount {
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 26px; }
+
 body {
   background-color: #fbfbf8; }
   body .count {

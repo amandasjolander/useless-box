@@ -21,7 +21,17 @@ $(window).load(function() {
 
 });
 
-$(document).ready(function() {
+$(document).ready(function(){
+  var socket = io('http://localhost:666');
+  socket.on('clientData', function(data){
+    $('#activeUsers').html(data.clients.active);
+  });
 
+  socket.on('clickData', function(data){
+    $('#clickCount').html(data.clicks.count);
+  });
+
+  $('#switch').on('click', function() {
+    socket.emit('click');
+  });
 });
-
