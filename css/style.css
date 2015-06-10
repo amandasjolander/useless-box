@@ -137,9 +137,8 @@ body {
     width: 30em;
     height: 1em;
     background: -webkit-linear-gradient(left, #32323A 5%, #313145 -6%, #52525D 31%, #29292C 89%); }
-
-.face {
-  background-color: #FFFFFF; }
+  .cub-1 .face {
+    background-color: #FFFFFF; }
 
 /* .cub-2 styles */
 .cub-2 {
@@ -199,7 +198,8 @@ body {
   margin: -5em 0 0 -0.5em; }
   .cub-4 .ft {
     transform: translateZ(6.5em);
-    border-right: none; }
+    border-right: none;
+    background-color: #4B4D4F; }
   .cub-4 .bk {
     transform: translateZ(-6.5em) rotateY(180deg); }
   .cub-4 .rt, .cub-4 .lt {
@@ -209,8 +209,6 @@ body {
     border-left: none;
     border-right: none;
     background: -webkit-linear-gradient(left, #4B4D4F 5%, #4B4D4F -6%, #7E7E8B 31%, #5E5E6B 89%); }
-  .cub-4 .face {
-    background-color: #FFFFFF; }
 
 /* .cub-5 styles */
 .cub-5, .lid {
