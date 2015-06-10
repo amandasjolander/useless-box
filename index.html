@@ -17,23 +17,36 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/script.js"></script>
 	<script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 
 <body class="clearfix">
 
+<!-- Title -->
+<div class="sitetitle">
+	<h1>
+		USELESSBOX
+	</h1>
+</div>
+
 <!-- Visitors and click count -->
 	<div class="count">
 		<div class="count-box visitors">
-			<span>
-			  Active Users
+			<span class="title">
+			  Visitors
 			</span>
-			<div id="activeUsers">
-			</div>
+			<span class="number">
+				<div id="activeUsers">
+				</div>
+			</span>
 		</div>
 		<div class="count-box total-click">
-			<span>
+			<span class="title">
 				Click
+			</span>
+			<span class="number">
+				<div id="clickCount">
+				</div>
 			</span>
 		</div>
 	</div>

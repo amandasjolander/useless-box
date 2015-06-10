@@ -2,14 +2,18 @@
   box-sizing: border-box;
 }
 
-#activeUsers, #clickCount {
-    font-size: 26px;
-    font-weight: bold;
-    line-height: 26px;
-  }
-
 body {
+  margin-top: 40px;
   background-color: #fbfbf8;
+
+  //Sitetitle
+  .sitetitle h1 {
+    float: left;
+    font-size: 50px;
+    font-family: 'Arialblack';
+    margin-left: 20%;
+    color: gray;
+  }
 
   //Boxes with visitors and click count
   .count {
@@ -19,10 +23,23 @@ body {
     margin: 30px 40px 0 0;
 
     .count-box {
-      width: 180px;
+      width: 200px;
       padding: 10px;
       background-color: lightgray;
       margin: 10px 0;
+
+      #activeUsers, #clickCount {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      span.title {
+        font-size: 24px;
+      }
+
+      span.number {
+        float: right;
+      }
     }
   }
 }
