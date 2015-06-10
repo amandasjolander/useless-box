@@ -22,13 +22,14 @@ $(window).load(function() {
 });
 
 $(document).ready(function(){
-  var socket = io('http://localhost:666');
+  var socket = io('http://10.0.1.112:5000');
   socket.on('clientData', function(data){
     $('#activeUsers').html(data.clients.active);
   });
 
   socket.on('clickData', function(data){
     $('#clickCount').html(data.clicks.count);
+    console.log(data.clicks.count);
   });
 
   $('#switch').on('click', function() {

@@ -1,23 +1,32 @@
 * {
   box-sizing: border-box; }
 
-#activeUsers, #clickCount {
-  font-size: 26px;
-  font-weight: bold;
-  line-height: 26px; }
-
 body {
+  margin-top: 40px;
   background-color: #fbfbf8; }
+  body .sitetitle h1 {
+    float: left;
+    font-size: 50px;
+    font-family: 'Arialblack';
+    margin-left: 20%;
+    color: gray; }
   body .count {
     box-sizing: border-box;
     width: 200px;
     float: right;
     margin: 30px 40px 0 0; }
     body .count .count-box {
-      width: 180px;
+      width: 200px;
       padding: 10px;
       background-color: lightgray;
       margin: 10px 0; }
+      body .count .count-box #activeUsers, body .count .count-box #clickCount {
+        font-size: 24px;
+        font-weight: bold; }
+      body .count .count-box span.title {
+        font-size: 24px; }
+      body .count .count-box span.number {
+        float: right; }
 
 #tridiv {
   perspective: 800px;
