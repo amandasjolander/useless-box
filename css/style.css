@@ -27,6 +27,7 @@ body {
   transform-style: preserve-3d; }
 
 .scene {
+  z-index: 0;
   width: 80em;
   height: 80em;
   top: 50%;
@@ -38,7 +39,7 @@ body {
   transform: rotateX(-18deg) rotateY(-39deg); }
 
 .face {
-  border: 1px solid gray; }
+  border: 0px solid gray; }
 
 .shape {
   top: 50%;
@@ -195,6 +196,7 @@ body {
   .cub-4 .bk {
     transform: translateZ(-6.5em) rotateY(180deg); }
   .cub-4 .rt, .cub-4 .lt {
+    z-index: 999;
     width: 13em;
     height: 10em;
     border-left: none;
