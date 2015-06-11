@@ -3,29 +3,41 @@
 }
 
 body {
-  margin-top: 40px;
+  // margin-top: 40px;
   background-color: #fbfbf8;
 
   //Sitetitle
-  .sitetitle h1 {
-    float: left;
-    font-size: 50px;
-    font-family: 'Arialblack';
-    margin-left: 20%;
+  .sitetitle {
+    text-align: center;
+    font-size: 7rem;
+    font-family: 'Source Sans Pro', sans-serif;
     color: gray;
+    margin:0;
+    z-index: 0;
+
+    .useless{
+      color: #3D3D29;
+      letter-spacing: -9px;
+    }
+    .box{
+    color:#FF6600;
+    letter-spacing: -9px;
+    margin-left: -2%
+
+    }
   }
 
   //Boxes with visitors and click count
   .count {
     box-sizing: border-box;
     width: 200px;
-    float: right;
-    margin: 30px 40px 0 0;
+    float: left;
+    margin: 90px 40px 0 0;
 
     .count-box {
       width: 200px;
       padding: 10px;
-      background-color: lightgray;
+      background-color: rgb(158, 161, 167);
       margin: 10px 0;
 
       #activeUsers, #clickCount {
@@ -47,26 +59,29 @@ body {
 
 //Tridiv area
 #tridiv {
+
   perspective: 800px;
   position: absolute;
   overflow: hidden;
   width: 100%;
-  height: 100%;
+  height: 550px;
   background: transparent;
+    top: 120px;
 }
 
 .scene, .shape, .face, .face-wrapper, .cr {
   position: absolute;
   transform-style: preserve-3d;
+
 }
 
 .scene {
-  z-index: 0;
+  z-index: 500;
   width: 80em;
   height: 80em;
   top: 50%;
   left: 50%;
-  margin: -40em 0 0 -40em;
+  margin: -680px 0 0 -585px;
   -webkit-transform:rotateX(-18deg) rotateY(-39deg); -moz-transform:rotateX(-18deg) rotateY(-39deg); -ms-transform:rotateX(-18deg) rotateY(-39deg); transform:rotateX(-18deg) rotateY(-39deg);   
 }
 
