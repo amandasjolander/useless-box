@@ -2,25 +2,47 @@
   box-sizing: border-box;
 }
 
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
 body {
-  margin-top: 40px;
   background-color: #fbfbf8;
 
   //Sitetitle
-  .sitetitle h1 {
-    float: left;
-    font-size: 50px;
-    font-family: 'Arialblack';
-    margin-left: 20%;
-    color: gray;
+  .sitetitle {
+    margin: 5% auto 0;
+    width: 328px;
+    
+    span {
+      font-size: 50px;
+      font-family: 'Arialblack';
+      font-weight: bold;
+      float: left;
+    }
+
+    span.title-useless {
+      color: gray;
+    }
+
+    span.title-box {
+      color: orange
+    }
   }
 
   //Boxes with visitors and click count
   .count {
     box-sizing: border-box;
     width: 200px;
-    float: right;
-    margin: 30px 40px 0 0;
+    position: absolute;
+    bottom: 0px;
+    left: 40px;
 
     .count-box {
       width: 200px;
@@ -576,7 +598,7 @@ body {
   box-shadow: none;
 
   .face {
-    background-color: #904fa7;
+    background: -webkit-linear-gradient(left, #9a530a 5%, #743e08 -6%, #dd7f1f 31%, #b4610d 89%);
   }
 }
 
@@ -585,7 +607,7 @@ body {
   left: 50%;
 
   .face {
-    background-color: #904fa7;
+    background: -webkit-linear-gradient(left, #9a530a 5%, #743e08 -6%, #dd7f1f 31%, #b4610d 89%);
   }
 }
 
