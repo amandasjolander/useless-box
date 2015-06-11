@@ -28,11 +28,11 @@ body {
     }
 
     span.title-useless {
-      color: gray;
+      color: #3D3D29;
     }
 
     span.title-box {
-      color: orange
+      color: #FF6600;
     }
   }
 
@@ -47,7 +47,7 @@ body {
     .count-box {
       width: 200px;
       padding: 10px;
-      background-color: lightgray;
+      background-color: rgb(158, 161, 167);
       margin: 10px 0;
 
       #activeUsers, #clickCount {
@@ -73,22 +73,24 @@ body {
   position: absolute;
   overflow: hidden;
   width: 100%;
-  height: 100%;
+  height: 550px;
   background: transparent;
+    top: 120px;
 }
 
 .scene, .shape, .face, .face-wrapper, .cr {
   position: absolute;
   transform-style: preserve-3d;
+
 }
 
 .scene {
-  z-index: 0;
+  z-index: 500;
   width: 80em;
   height: 80em;
   top: 50%;
   left: 50%;
-  margin: -40em 0 0 -40em;
+  margin: -680px 0 0 -585px;
   -webkit-transform:rotateX(-18deg) rotateY(-39deg); -moz-transform:rotateX(-18deg) rotateY(-39deg); -ms-transform:rotateX(-18deg) rotateY(-39deg); transform:rotateX(-18deg) rotateY(-39deg);   
 }
 
