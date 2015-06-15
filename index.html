@@ -1,644 +1,644 @@
-
+ 
 <!DOCTYPE html>
 <html>
 <head>
-
-	<meta name="format-detection" content="telephone=no">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width">
-	<meta charset="UTF-8"> 
-	
-	<link rel="stylesheet" type="text/css" href="css/normalize.css" media="all">
-	<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
-	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:700' rel='stylesheet' type='text/css'>
-
-	<script src="js/jquery.js"></script>
-	<script src="js/script.js"></script>
-	<script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>
+ 
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+        <meta charset="UTF-8">
+       
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" media="all">
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:700' rel='stylesheet' type='text/css'>
+ 
+        <script src="js/jquery.js"></script>
+        <script src="js/script.js"></script>
+        <script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
-
+ 
 <body class="cf">
-
-
+ 
+ 
 <!-- Title -->
 <div class="sitetitle">
-	<span class="title-useless">
-		USELESS
-	</span>
-	<span class="title-box">
-		BOX
-	</span>
+        <span class="useless">
+                USELESS
+        </span>
+        <span class="box">
+                BOX
+        </span>
 </div>
-
+ 
 <!-- Visitors and click count -->
-	<div class="count">
-		<div class="count-box visitors">
-			<span class="title">
-			  Visitors
-			</span>
-			<span class="number">
-				<div id="activeUsers">
-				</div>
-			</span>
-		</div>
-		<div class="count-box total-click">
-			<span class="title">
-				Click
-			</span>
-			<span class="number">
-				<div id="clickCount">
-				</div>
-			</span>
-		</div>
-	</div>
-
-	<!-- Tridiv area -->
-	<div id="tridiv">
-
-	  <div class="scene">
-
-	  <!-- Cube 1 -->
-	    <div class="shape shadow cuboid-1 cub-1">
-	      <div class="face ft">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face bk">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face rt">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face lt">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face bm">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face tp">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	    </div>
-
-	    <!-- Cube 2 -->
-	    <div class="shape shadow cuboid-2 cub-2">
-	      <div class="face ft">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face bk">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face rt">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face lt">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face bm">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face tp">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	    </div>
-
-	    <!-- Cube 3 -->
-	    <div class="shape shadow cuboid-3 cub-3">
-	      <div class="face ft">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face bk">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face rt">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face lt">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face bm">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face tp">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	    </div>
-
-	    <!-- Cube 4 -->
-	    <div class="shape shadow cuboid-4 cub-4">
-	      <div class="face ft">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face bk">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face rt">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face lt">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face bm">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face tp">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	    </div>
-
-	    <!-- Lid, Cube 5 -->
-	    <div class="shape shadow cuboid-5 cub-5 lid">
-	      <div class="face ft">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face bk">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face rt">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face lt">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face bm">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face tp">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	    </div>
-
-	    <!-- Lid 2,Cube 6 -->
-	    <div class="shape shadow cuboid-6 cub-6">
-	      <div class="face ft">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face bk">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face rt">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face lt">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face bm">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face tp">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	    </div>
-
-	    <!-- Cylinder 1 -->
-	    <div class="shape shadow cylinder-1 cyl-1">
-	      <div class="face bm">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face tp">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s0">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s1">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s2">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s3">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s4">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s5">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s6">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s7">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s8">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s9">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s10">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s11">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s12">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s13">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	    </div>
-
-	    <!-- Switch, Cylinder 2 -->
-	    <div class="shape shadow cylinder-2 cyl-2 switch" id="switch">
-	      <div class="face bm">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face tp">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s0">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s1">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s2">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s3">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s4">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s5">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s6">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s7">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s8">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s9">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s10">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s11">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s12">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s13">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	    </div>
-
-	    <!-- Bottom closer, Cylinder 3 -->
-	    <div class="shape cylinder-3 cyl-3 closer">
-	      <div class="face bm">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face tp">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s0">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s1">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s2">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s3">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s4">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s5">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s6">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s7">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s8">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s9">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s10">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s11">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s12">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s13">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	    </div>
-
-	    <!-- 1st middle closer, Cylinder 4 -->
-	    <div class="shape cylinder-4 cyl-4 closer">
-	      <div class="face bm">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face tp">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s0">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s1">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s2">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s3">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s4">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s5">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s6">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s7">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s8">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s9">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s10">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s11">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s12">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s13">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	    </div>
-
-	    <!-- 2nd middle closer, Cylinder 5 -->
-	    <div class="shape cylinder-5 cyl-5 closer">
-	      <div class="face bm">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face tp">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s0">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s1">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s2">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s3">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s4">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s5">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s6">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s7">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s8">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s9">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s10">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s11">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s12">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s13">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	    </div>
-
-	    <!-- Top closer, Cylinder 6 -->
-	    <div class="shape cylinder-6 cyl-6 closer">
-	      <div class="face bm">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face tp">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s0">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s1">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s2">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s3">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s4">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s5">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s6">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s7">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s8">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s9">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s10">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s11">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s12">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	      <div class="face side s13">
-	        <div class="photon-shader">
-	        </div>
-	      </div>
-	    </div>
-
-	  </div>
-
-	</div>
-	<!-- /Tridiv area -->
-
+        <div class="count">
+                <div class="count-box visitors">
+                        <span class="title">
+                          Visitors
+                        </span>
+                        <span class="number">
+                                <div id="activeUsers">
+                                </div>
+                        </span>
+                </div>
+                <div class="count-box total-click">
+                        <span class="title">
+                                Click
+                        </span>
+                        <span class="number">
+                                <div id="clickCount">
+                                </div>
+                        </span>
+                </div>
+        </div>
+ 
+        <!-- Tridiv area -->
+        <div id="tridiv">
+ 
+          <div class="scene">
+ 
+          <!-- Cube 1 -->
+            <div class="shape shadow cuboid-1 cub-1">
+              <div class="face ft">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face bk">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face rt">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face lt">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face bm">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face tp">
+                <div class="photon-shader">
+                </div>
+              </div>
+            </div>
+ 
+            <!-- Cube 2 -->
+            <div class="shape shadow cuboid-2 cub-2">
+              <div class="face ft">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face bk">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face rt">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face lt">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face bm">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face tp">
+                <div class="photon-shader">
+                </div>
+              </div>
+            </div>
+ 
+            <!-- Cube 3 -->
+            <div class="shape shadow cuboid-3 cub-3">
+              <div class="face ft">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face bk">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face rt">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face lt">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face bm">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face tp">
+                <div class="photon-shader">
+                </div>
+              </div>
+            </div>
+ 
+            <!-- Cube 4 -->
+            <div class="shape shadow cuboid-4 cub-4">
+              <div class="face ft">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face bk">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face rt">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face lt">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face bm">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face tp">
+                <div class="photon-shader">
+                </div>
+              </div>
+            </div>
+ 
+            <!-- Lid, Cube 5 -->
+            <div class="shape shadow cuboid-5 cub-5 lid">
+              <div class="face ft">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face bk">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face rt">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face lt">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face bm">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face tp">
+                <div class="photon-shader">
+                </div>
+              </div>
+            </div>
+ 
+            <!-- Lid 2,Cube 6 -->
+            <div class="shape shadow cuboid-6 cub-6">
+              <div class="face ft">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face bk">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face rt">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face lt">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face bm">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face tp">
+                <div class="photon-shader">
+                </div>
+              </div>
+            </div>
+ 
+            <!-- Cylinder 1 -->
+            <div class="shape shadow cylinder-1 cyl-1">
+              <div class="face bm">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face tp">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s0">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s1">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s2">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s3">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s4">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s5">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s6">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s7">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s8">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s9">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s10">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s11">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s12">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s13">
+                <div class="photon-shader">
+                </div>
+              </div>
+            </div>
+ 
+            <!-- Switch, Cylinder 2 -->
+            <div class="shape shadow cylinder-2 cyl-2 switch" id="switch">
+              <div class="face bm">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face tp">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s0">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s1">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s2">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s3">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s4">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s5">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s6">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s7">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s8">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s9">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s10">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s11">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s12">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s13">
+                <div class="photon-shader">
+                </div>
+              </div>
+            </div>
+ 
+            <!-- Bottom closer, Cylinder 3 -->
+            <div class="shape cylinder-3 cyl-3 closer">
+              <div class="face bm">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face tp">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s0">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s1">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s2">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s3">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s4">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s5">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s6">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s7">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s8">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s9">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s10">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s11">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s12">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s13">
+                <div class="photon-shader">
+                </div>
+              </div>
+            </div>
+ 
+            <!-- 1st middle closer, Cylinder 4 -->
+            <div class="shape cylinder-4 cyl-4 closer">
+              <div class="face bm">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face tp">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s0">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s1">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s2">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s3">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s4">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s5">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s6">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s7">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s8">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s9">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s10">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s11">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s12">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s13">
+                <div class="photon-shader">
+                </div>
+              </div>
+            </div>
+ 
+            <!-- 2nd middle closer, Cylinder 5 -->
+            <div class="shape cylinder-5 cyl-5 closer">
+              <div class="face bm">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face tp">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s0">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s1">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s2">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s3">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s4">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s5">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s6">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s7">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s8">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s9">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s10">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s11">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s12">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s13">
+                <div class="photon-shader">
+                </div>
+              </div>
+            </div>
+ 
+            <!-- Top closer, Cylinder 6 -->
+            <div class="shape cylinder-6 cyl-6 closer">
+              <div class="face bm">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face tp">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s0">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s1">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s2">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s3">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s4">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s5">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s6">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s7">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s8">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s9">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s10">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s11">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s12">
+                <div class="photon-shader">
+                </div>
+              </div>
+              <div class="face side s13">
+                <div class="photon-shader">
+                </div>
+              </div>
+            </div>
+ 
+          </div>
+ 
+        </div>
+        <!-- /Tridiv area -->
+ 
 </body>
-
+ 
 </html>
